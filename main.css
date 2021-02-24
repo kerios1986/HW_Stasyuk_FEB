@@ -9,3 +9,7 @@ body {
 .block-row {
     display: inline-block;
 }
+
+.menu {
+    border: 3px solid red;
+}
