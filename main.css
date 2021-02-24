@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .peredniy-fon {
     background-color: white;
     padding: 80px;
@@ -13,4 +14,30 @@
     font-size: 30px;
     left: 100%;
     bottom: 69%;    
+=======
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.block-row {
+    display: inline-block;
+}
+
+<<<<<<< HEAD
+.menu {
+    border: 3px solid red;
+=======
+.foo {
+    border: 1px solid beige;
+    border-radius: 6px;
+}
+
+.flex-box {
+    display: flex;
+>>>>>>> HW-13.Vetka-3
+>>>>>>> HW-13-Stasyuk.Filing-html-file
 }
