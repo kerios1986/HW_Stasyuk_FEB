@@ -10,6 +10,16 @@ body {
     display: inline-block;
 }
 
+<<<<<<< HEAD
 .menu {
     border: 3px solid red;
+=======
+.foo {
+    border: 1px solid beige;
+    border-radius: 6px;
+}
+
+.flex-box {
+    display: flex;
+>>>>>>> HW-13.Vetka-3
 }
