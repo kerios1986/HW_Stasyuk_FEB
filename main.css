@@ -9,3 +9,8 @@ body {
 .block-row {
     display: inline-block;
 }
+
+.foo {
+    border: 1px solid beige;
+    border-radius: 6px;
+}
