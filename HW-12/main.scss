@@ -5,3 +5,89 @@
 body {
     margin: 0px;
 }
+
+.gallery {
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    > div:nth-child(1) {
+        background-image: url(./img/01.jpg);
+    }
+    
+    > div:nth-child(2) {
+        background-image: url(./img/02.jpg);
+    }
+    
+    > div:nth-child(3) {
+        background-image: url(./img/03.jpg);
+    }
+    
+    > div:nth-child(4) {
+        background-image: url(./img/04.jpg);
+    }
+    
+    > div:nth-child(5) {
+        background-image: url(./img/05.jpg);
+    }
+    
+    > div:nth-child(6) {
+        background-image: url(./img/06.jpg);
+    }
+    
+    > div:nth-child(7) {
+        background-image: url(./img/07.jpg);
+    }
+    
+    > div:nth-child(8) {
+        background-image: url(./img/08.jpg);
+    }
+    
+    > div:nth-child(9) {
+        background-image: url(./img/09.jpg);
+    }
+    
+    > div:nth-child(10) {
+        background-image: url(./img/10.jpg);
+    }
+    
+    > div:nth-child(11) {
+        background-image: url(./img/11.jpg);
+    }
+    
+    > div:nth-child(12) {
+        background-image: url(./img/12.jpg);
+    }
+}
+
+.pfoto {
+    flex-basis: calc(100% / 3);
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    font-size: 0.8em;
+    margin: 0 0 15px 15px;
+    color: wheat;
+    background-image: none;
+    background-color: none;
+}
+
+
+
+
+
+
+
+
+
+
