@@ -75,6 +75,7 @@ body {
 
 .skirting {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   position: fixed;
   z-index: 1;
@@ -111,7 +112,7 @@ body {
   color: #7e828d;
   position: absolute;
   display: inline-block;
-  left: calc(100% - 32px);
+  left: calc(100% - 35px);
   top: calc(0% + 10px);
 }
 
@@ -142,14 +143,14 @@ label:hover {
 .carte-block div {
   width: 100%;
 }
-.carte-block i:hover {
-  color: #47c5ab;
-  cursor: pointer;
-}
 .carte-block .fab {
   font-size: 30px;
   color: #9b9b9c;
   padding-right: 10px;
+}
+.carte-block .fab:hover {
+  color: #47c5ab;
+  cursor: pointer;
 }
 
 form textarea, form input {
@@ -168,6 +169,10 @@ form button {
   padding: 10px;
   margin-right: 20px;
   color: white;
+}
+form button:hover {
+  color: blue;
+  cursor: pointer;
 }
 form button:first-of-type {
   background-color: #34a58e;
@@ -197,6 +202,11 @@ form > div {
     aspect-ratio: 3 / 3;
   }
 }
+@media (max-width: 840px) {
+  #checkbox:checked ~ .menu {
+    top: calc(100% - 439px);
+  }
+}
 @media (max-width: 768px) {
   .pfoto {
     flex-basis: calc(100% / 2);
@@ -212,8 +222,6 @@ form > div {
   }
 
   #checkbox:checked ~ .menu {
-    opacity: 1;
-    visibility: visible;
     top: calc(100% - 698px);
   }
 }
