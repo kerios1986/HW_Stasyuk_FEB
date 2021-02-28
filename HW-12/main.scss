@@ -113,6 +113,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    
     h3 {
         text-transform: uppercase;
     }
@@ -237,6 +238,16 @@ form {
 
     .carte-block {
         flex-basis: calc(100% / 1);
+    }
+
+    .menu{
+        flex-direction: column;
+    }    
+
+    #checkbox:checked ~ .menu{
+        opacity: 1;
+        visibility: visible;
+        top: calc(100% - 698px);        
     }
 
 }
