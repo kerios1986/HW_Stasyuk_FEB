@@ -78,7 +78,7 @@ body {
 
 .pfoto {
     flex-basis: calc(100% / 3);
-    aspect-ratio: 16 / 9;
+    height: 330px;
     @include gorezontal();
     align-items: flex-end;
     flex-grow: 1;
@@ -231,18 +231,6 @@ form {
 
 }
 
-@media (max-width: 1200px) {
-    .pfoto {
-        aspect-ratio: 4 / 3;
-    }    
-}
-
-@media (max-width: 915px) {
-    .pfoto {
-        aspect-ratio: 3 / 3;
-    }    
-}
-
 @media (max-width: 840px) {
     #checkbox:checked ~ .menu{
         top: calc(100% - 439px);        
@@ -252,11 +240,6 @@ form {
 @media (max-width: 768px) {
     .pfoto {
         flex-basis: calc(100% / 2);
-        aspect-ratio: 16 / 9;
-    }
-
-    .carte-block {
-        flex-basis: calc(100% / 1);
     }
 
     .menu{
@@ -269,17 +252,9 @@ form {
 
 }
 
-@media (max-width: 540px) {
-    .pfoto {
-        aspect-ratio: 4 / 3;
-    }    
-}
-
 @media (max-width: 480px) {
     .pfoto {
         flex-basis: calc(100% / 1);
     }
-    .carte-block {
-        flex-basis: calc(100% / 1);
-    }     
+   
 }
