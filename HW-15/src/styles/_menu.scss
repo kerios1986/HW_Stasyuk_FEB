@@ -1,0 +1,60 @@
+.menu {
+    position: fixed;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: $menu-color;
+    padding: 40px;
+    text-align: right;
+    flex-shrink: 4;
+    z-index: 1000;
+    @include flex(column, center, flex-end);
+
+    ul {        
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
+        font-size: 12px;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    li {
+        margin-bottom: 20px;        
+        text-transform: uppercase;
+        a {
+            color: $description-color;
+        }
+    }
+
+    @include media(tablet) {
+        width: 100%;
+        height: 60px;
+        padding: 30px;
+        @include flex(row, center, center);
+
+        ul, li {
+            display: inline;
+            @include shrift;
+            letter-spacing: 1.5px;
+        }       
+    }
+
+    @include media(mobile) {
+        visibility: hidden;        
+        opacity: 0;
+        width: 150px;
+        height: 110px;
+        padding: 10px;
+        border-radius: 10px;
+        top: calc(0% + 60px);
+        right: calc(0% - 150px);
+        transition: all 0.5s;
+
+        ul, li {
+            text-align: left;
+            display: block;
+            margin: 10px;
+        }   
+    }
+}

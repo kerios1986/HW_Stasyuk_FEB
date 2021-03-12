@@ -1,0 +1,30 @@
+.plinth {
+    padding: 40px;
+    background-color: #493382;
+    @include marja-left;
+    @include flex(row, center, stretch); 
+    
+    div {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+    
+    div > a {
+        color: $description-color;
+    }
+
+    @include media(tablet) {
+        flex-wrap: wrap;
+        @include no-marja; 
+        @include flex(row, flex-start, flex-start); 
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        div:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+}
