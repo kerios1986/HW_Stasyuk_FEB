@@ -58,7 +58,7 @@
     transition: all 0.5s;
   }
   .menu ul, .menu li {
-    text-align: left;
+    text-align: center;
     display: block;
     margin: 10px;
   }
