@@ -1,0 +1,42 @@
+#checkbox {
+    display: none;
+
+    &:checked ~ .menu {
+        opacity: 1;
+        visibility: visible;
+        right: calc(0% - 0px);
+    }
+}
+
+.burgerbutton {
+    position: fixed;
+    right: calc(0% + 10px);
+    top: calc(0% + 5px);
+    font-size: 45px;
+    color: $menu-color;
+    display: inline-block;
+    opacity: 0;
+    visibility: hidden;
+
+    &:hover {
+        cursor: pointer;
+        color: green;
+    }
+
+    i {
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        color: white;
+        left: calc(0% + 13.5px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @include media(mobile) {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+

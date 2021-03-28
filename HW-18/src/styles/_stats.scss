@@ -1,0 +1,28 @@
+.stats {
+    width: 440px;
+    margin-bottom: 40px;
+
+    @include flex(row, flex-start, center);
+
+    &-element {
+        margin-right: 24px;
+        width: calc(100% / 2);
+        background-color: $gray-color;
+        border-radius: 14px;
+        @include flex(row, center, center);
+
+        div {
+            @include fon-baloo(64px, 102px);
+            margin-right: 11px;
+        }
+
+        b {
+            @include fon-roboto(16px, 24px);
+        }
+    }
+
+    &-element:last-of-type {
+        margin-right: 0px;
+    }
+
+}

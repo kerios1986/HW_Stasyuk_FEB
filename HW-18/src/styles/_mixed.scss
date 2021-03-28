@@ -1,0 +1,27 @@
+@mixin flex($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin fon-baloo($fon-siza, $line-height) {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fon-siza;
+    line-height: $line-height; 
+}
+
+@mixin fon-roboto($fon-siza, $line-height) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $fon-siza;
+    line-height: $line-height; 
+}
+
+$white-color:#FFFFFF;
+$black-color: #0C0B0B;
+$gray-color: #F5F5F7;
+

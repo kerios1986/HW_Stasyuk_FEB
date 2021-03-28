@@ -1,0 +1,82 @@
+.my-course {
+    margin: 24px 24px 40px 0px;
+    @include flex(row, flex-start, flex-start);
+
+    &-element {
+        margin-right: 24px;
+        width: 500px;
+        height: 80px;
+        background: $gray-color;
+        border-radius: 14px;
+        padding: 8px;
+        @include flex(row, flex-start, center);
+    }
+
+    &-img {
+        width: 64px;
+        height: 64px;
+        background: $white-color;
+        border-radius: 12px;
+        padding: 16px;
+        margin-right: 24px;        
+    }
+
+    &-languages {
+        margin-right: 45px; 
+
+        span {
+            @include fon-baloo(16px, 125px);
+        }
+
+        p {
+            margin: 0;
+            @include fon-roboto(13px, 15px);
+        }
+    }
+
+    &-level {
+        margin-right: 40px; 
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translateY(-50%);
+            @include fon-roboto(13px, 15px);
+        }
+    }
+
+    &-button {
+        width: 120px;
+        height: 40px;
+        background: $black-color;
+        border-radius: 8px;        
+        text-align: center;
+        color: $white-color;
+        @include flex(column, center, center);
+        @include fon-roboto(13px, 15px);
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+
+    &-arrow {
+        margin: auto;
+        @include flex(row, flex-start, center);
+
+        img {
+            margin-right: 16px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        img:last-of-type {
+            margin-right: 0px;
+        }
+    }
+
+}

@@ -1,0 +1,145 @@
+.pinkblock {
+    background-color: $pink-color;
+    padding: 40px;
+    @include marja-left;
+    @include flex(column, flex-start, flex-start);
+
+    h1 {
+        font-size: 40px;
+        color: $title-color;
+        margin-bottom: 0%;
+    }
+
+    h3 {
+        font-size: 25px;
+        color: $title-color;
+        margin: 10px 10px 0 0;
+    }
+    
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    &-chart {
+        border: 1px solid $pink-fone-color;
+        border-radius: 5px;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        @include flex(row, flex-start, flex-start);
+    
+    }
+
+    &-element {
+        padding: 40px 20px 40px 100px;
+        width: calc(100% / 2);
+        background-color: $fone-color;
+        
+        &:nth-child(1) {
+            border-bottom: 1px solid $pink-fone-color;
+            border-right: 1px solid $pink-fone-color;
+        }
+
+        &:nth-child(2) {
+            border-bottom: 1px solid $pink-fone-color;
+        }
+
+        &:nth-child(3) {
+            border-bottom: 1px solid $pink-fone-color;
+            border-right: 1px solid $pink-fone-color;
+        }
+
+        &:nth-child(4) {
+            border-bottom: 1px solid $pink-fone-color;
+        }
+        
+        &:nth-child(5) {
+            border-right: 1px solid $pink-fone-color;
+        }
+
+        & h3 {
+            position: relative;
+    
+            span {
+                position: absolute;
+                top: 50%;
+                left: calc(0% - 65px);
+                transform: translateY(-50%);
+                font-size: 45px;
+    
+                i {
+                    position: absolute;
+                    color: $pink-color;
+                    font-size: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: calc(0% + 11.5px);
+                }
+            }
+        }
+    }
+
+    @include media(tablet) {
+
+        @include no-marja; 
+
+        p {
+            font-size: 20px;
+        }
+
+        .button {
+            @include shrift;
+        }
+    }
+
+    @include media(tablet2) {
+        &-chart {
+            @include flex(column, flex-start, flex-start);
+        }
+
+        &-element {
+            width: calc(100%);            
+
+            &:nth-child(1) {
+                border-bottom: 1px solid $pink-fone-color;
+                border-right: none;
+            }
+    
+            &:nth-child(2) {
+                border-bottom: 1px solid $pink-fone-color;
+            }
+    
+            &:nth-child(3) {
+                border-bottom: 1px solid $pink-fone-color;
+                border-right: none;
+            }
+    
+            &:nth-child(4) {
+                border-bottom: 1px solid $pink-fone-color;
+            }
+            
+            &:nth-child(5) {
+                border-bottom: 1px solid $pink-fone-color;
+                border-right: none;
+            }
+        }        
+    }
+
+    @include media(mobile) {
+        
+        &-element {
+            padding: 45px 20px 20px 20px;
+
+            & h3 {
+
+                span {
+
+                    top: calc(0% - 45px);
+                    left: 0%;
+                    transform: none;
+                }     
+            }       
+        }        
+    }
+}

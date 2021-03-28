@@ -1,0 +1,54 @@
+.banner {
+    width: 440px;
+    height: 193px;
+    background-color: $gray-color;
+    border-radius: 14px;
+    @include flex(row, flex-start, flex-start);
+
+    &-element {
+        width: calc(100% / 2);
+        position:relative;
+        @include flex(column, flex-start, flex-start);
+
+        h2 {
+            margin: 24px 0 2px 24px;
+            @include fon-baloo(24px, 38px);
+        }
+
+        h4 {
+            margin: 0px 0 24px 24px;
+            @include fon-roboto(16px, 24px);
+        }
+    }
+
+    &-brain {
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        display: inline-block;
+        bottom: 0%;
+        left: calc(100% + 54px);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-button {
+        margin-left: 24px;
+        width: 120px;
+        height: 40px;
+        background: $black-color;
+        border-radius: 8px;        
+        text-align: center;
+        color: $white-color;
+        @include flex(column, center, center);
+        @include fon-roboto(13px, 15px);
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+}

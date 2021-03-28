@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.obolochka {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu {
+  margin: 24px 0px 24px 0px;
+  width: 132px;
+  height: 852px;
+  background: #0C0B0B;
+  border-radius: 24px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu .logo {
+  width: 47px;
+  height: 102px;
+  margin: 16px 43px 64px 42px;
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 102px;
+}
+.menu div {
+  margin-bottom: 64px;
+}
+.menu div:hover {
+  cursor: pointer;
+}
+.menu div:last-of-type {
+  margin-bottom: 0px;
+  margin-top: 161px;
+}
+
+.description {
+  margin: 24px 0px 24px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header {
+  width: 620px;
+  height: 191px;
+  padding-top: 31px;
+  background: #FFFFFF;
+}
+.header-element {
+  background: #F5F5F7;
+  border-radius: 14px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header-element h1 {
+  padding: 46px 410px 0px 31px;
+  margin: 0px;
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 57px;
+}
+.header-element p {
+  margin: 0px 0px 0px 31px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header-element img {
+  position: absolute;
+  bottom: 0%;
+  left: 341px;
+}
+
+.my-course {
+  margin: 24px 24px 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.my-course-element {
+  margin-right: 24px;
+  width: 500px;
+  height: 80px;
+  background: #F5F5F7;
+  border-radius: 14px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.my-course-img {
+  width: 64px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-right: 24px;
+}
+.my-course-languages {
+  margin-right: 45px;
+}
+.my-course-languages span {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125px;
+}
+.my-course-languages p {
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.my-course-level {
+  margin-right: 40px;
+  position: relative;
+}
+.my-course-level span {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.my-course-button {
+  width: 120px;
+  height: 40px;
+  background: #0C0B0B;
+  border-radius: 8px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.my-course-button:hover {
+  cursor: pointer;
+}
+.my-course-arrow {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.my-course-arrow img {
+  margin-right: 16px;
+}
+.my-course-arrow img:hover {
+  cursor: pointer;
+}
+.my-course-arrow img:last-of-type {
+  margin-right: 0px;
+}
+
+.couesrs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.couesrs h2 {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0;
+}
+.couesrs-list {
+  margin: 16px 0px 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.couesrs-list h3 {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0px 30px 0px 0px;
+}
+.couesrs-docket {
+  width: 620px;
+  height: 80px;
+  background: #F5F5F7;
+  border-radius: 14px;
+  padding: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.couesrs-img {
+  width: 64px;
+  height: 64px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-right: 24px;
+}
+.couesrs-languages {
+  width: 151px;
+  margin-right: 37px;
+}
+.couesrs-languages span {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+}
+.couesrs-languages p {
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.couesrs-time {
+  margin-right: 41px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.couesrs-time img {
+  padding-right: 8px;
+}
+.couesrs-time span {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.couesrs-level {
+  margin-right: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.couesrs-level img {
+  padding-right: 8px;
+}
+.couesrs-level span {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.couesrs-button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #0C0B0B;
+  background: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+  color: #0C0B0B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.couesrs-button:hover {
+  cursor: pointer;
+}
+
+.appearance {
+  margin: 60px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.navigation {
+  margin-bottom: 10px;
+  width: 439px;
+  height: 43px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navigation-search {
+  margin-right: 35px;
+  width: 300px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.navigation-search p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+.navigation-search img {
+  position: absolute;
+  top: 50%;
+  left: calc(0% + 16px);
+  transform: translateY(-50%);
+}
+.navigation-search input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #F5F5F7;
+  border-radius: 8px;
+  padding-left: 46px;
+  font-size: 18px;
+}
+.navigation-bell {
+  margin-right: 26px;
+  width: 30px;
+  height: 36px;
+  position: relative;
+}
+.navigation-bell img:last-of-type {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.navigation-ava {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding-right: 16px;
+}
+.navigation-ava img:first-of-type {
+  position: absolute;
+  bottom: 15%;
+  left: 0%;
+}
+.navigation-ava img:last-of-type {
+  position: absolute;
+  top: 35%;
+  left: calc(100% + 8px);
+  transform: translateY(-50%);
+}
+
+.stats {
+  width: 440px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stats-element {
+  margin-right: 24px;
+  width: calc(100% / 2);
+  background-color: #F5F5F7;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.stats-element div {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 102px;
+  margin-right: 11px;
+}
+.stats-element b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.stats-element:last-of-type {
+  margin-right: 0px;
+}
+
+.statistics {
+  margin-bottom: 50px;
+  width: 450px;
+  height: 378px;
+}
+
+.banner {
+  width: 440px;
+  height: 193px;
+  background-color: #F5F5F7;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.banner-element {
+  width: calc(100% / 2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.banner-element h2 {
+  margin: 24px 0 2px 24px;
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 38px;
+}
+.banner-element h4 {
+  margin: 0px 0 24px 24px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.banner-brain {
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  display: inline-block;
+  bottom: 0%;
+  left: calc(100% + 54px);
+}
+.banner-brain img {
+  width: 100%;
+  height: 100%;
+}
+.banner-button {
+  margin-left: 24px;
+  width: 120px;
+  height: 40px;
+  background: #0C0B0B;
+  border-radius: 8px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+.banner-button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

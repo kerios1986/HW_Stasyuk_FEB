@@ -1,0 +1,101 @@
+.contact {
+    padding: 40px;
+    background-color: #5e42a6;
+    @include marja-left;
+    @include flex(column, flex-start, flex-start);
+
+    h1 {
+        font-size: 40px;
+        color: $title-color;
+        margin-bottom: 0%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    &-feedback {
+        width: 100%;
+        @include flex(row, flex-start, flex-start);
+        
+        h3 {
+            font-size: 25px;
+            color: $title-color;
+            margin-bottom: 0%;
+        }
+    
+        span {
+            font-size: 20px;
+        }
+    }
+
+    &-form {
+        width: calc((100% *2) / 3);
+        @include flex(column, flex-start, stretch);    
+        border-right: 1px solid $description-color;
+        padding: 0 20px 0 0;
+
+        textarea, input {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: $fone-color;
+            width: 100%;
+            border: none;
+            color: white;
+        }
+
+        div:last-of-type {
+            margin-top: 30px;
+            width: 205px;
+        }
+    }
+
+    .adres {
+        width: calc(100% / 3);
+        padding: 0 0 0 20px;
+        @include flex(column, flex-start, flex-start);
+
+        & i {
+            font-size: 20px;
+            margin: 8px 8px 0 0;
+        }
+
+        & i:hover {
+            color: $title-color;
+            cursor: pointer;
+        }
+    }
+
+    @include media(tablet) {
+
+        @include no-marja; 
+
+        p {
+            font-size: 20px;
+        }
+
+        .button {
+            @include shrift;
+        }
+    }
+
+    @include media(tablet2) {
+        &-feedback {
+            @include flex(column, flex-start, stretch);
+        }
+
+        &-form {
+            width: 100%;
+            @include flex(column, flex-start, stretch);  
+            border-right: none;  
+            border-bottom: 1px solid $description-color;
+            padding: 0 0 20px 0;
+        }
+
+        .adres {
+            width: calc(100%);
+        }
+    }
+
+}

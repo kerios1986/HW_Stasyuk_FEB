@@ -1,0 +1,260 @@
+$zadniyfon-color: #34363b;
+$plinthmenu-color: #1f2224;
+$temuyshrift-color: #9b9b9c;
+$lablehover-color: #47c5ab;
+
+@mixin gorezontal() {
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: white;
+    background-color: $zadniyfon-color;
+}
+
+.gallery {
+    @include gorezontal();
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-bottom: 58px;    
+
+    > div:nth-child(1) {
+        background-image: url(./img/01.jpg);
+    }
+    
+    > div:nth-child(2) {
+        background-image: url(./img/02.jpg);
+    }
+    
+    > div:nth-child(3) {
+        background-image: url(./img/03.jpg);
+    }
+    
+    > div:nth-child(4) {
+        background-image: url(./img/04.jpg);
+    }
+    
+    > div:nth-child(5) {
+        background-image: url(./img/05.jpg);
+    }
+    
+    > div:nth-child(6) {
+        background-image: url(./img/06.jpg);
+    }
+    
+    > div:nth-child(7) {
+        background-image: url(./img/07.jpg);
+    }
+    
+    > div:nth-child(8) {
+        background-image: url(./img/08.jpg);
+    }
+    
+    > div:nth-child(9) {
+        background-image: url(./img/09.jpg);
+    }
+    
+    > div:nth-child(10) {
+        background-image: url(./img/10.jpg);
+    }
+    
+    > div:nth-child(11) {
+        background-image: url(./img/11.jpg);
+    }
+    
+    > div:nth-child(12) {
+        background-image: url(./img/12.jpg);
+    }
+}
+
+.pfoto {
+    flex-basis: calc(100% / 3);
+    height: 330px;
+    @include gorezontal();
+    align-items: flex-end;
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    font-size: 0.8em;
+    margin: 0 0 15px 15px;
+    white-space: nowrap;
+}
+
+.skirting {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    bottom: 0%;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: $plinthmenu-color;
+    padding: 20px;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: $plinthmenu-color;    
+    position: fixed;
+    top: calc(100% - 0px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    
+    h3 {
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $temuyshrift-color;
+    }
+
+    label {
+        font-size: 23px;
+        color:  #7e828d;
+        position: absolute;
+        display: inline-block;
+        left: calc(100% - 35px);
+        top: calc(0% + 10px);
+    }
+}
+
+label:hover {
+    color: $lablehover-color;
+    cursor: pointer;
+}
+
+#checkbox:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    top: calc(100% - 389px);
+    
+}
+
+#checkbox {
+    display: none;
+}
+
+.carte-block {
+    flex-basis: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 20px;
+
+    div {
+        width: 100%;
+    }
+
+    .fab {
+        font-size: 30px;
+        color: $temuyshrift-color;
+        padding-right: 10px;
+
+        &:hover {
+            color: $lablehover-color;
+            cursor: pointer;
+        }
+    }
+}
+
+form {
+        
+    textarea, input {
+        font-size: 20px;
+        padding: 10px;
+        background-color: $zadniyfon-color;
+        width: 100%;
+        border: none;
+        color: white; 
+    }
+
+    button {
+        width: 100px;
+        font-size: 20px;
+        background-color: $zadniyfon-color;
+        border: none;
+        padding: 10px;
+        margin-right: 20px;
+        color: white;
+
+        &:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        &:first-of-type {
+            background-color: #34a58e; 
+        }
+                
+    }
+
+    > div {
+        margin: 5px 0 5px 0;
+    }
+}
+
+.name-email {
+    display: flex;
+    flex-direction: row;    
+
+    div {
+        width: 50%;
+    }
+
+    div:nth-child(1) {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 840px) {
+    #checkbox:checked ~ .menu{
+        top: calc(100% - 439px);        
+    }  
+}
+
+@media (max-width: 768px) {
+    .pfoto {
+        flex-basis: calc(100% / 2);
+    }
+
+    .menu{
+        flex-direction: column;
+    }    
+
+    #checkbox:checked ~ .menu{
+        top: calc(100% - 698px);        
+    }
+
+}
+
+@media (max-width: 480px) {
+    .pfoto {
+        flex-basis: calc(100% / 1);
+    }
+   
+}

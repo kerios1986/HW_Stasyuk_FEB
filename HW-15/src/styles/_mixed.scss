@@ -1,0 +1,40 @@
+@mixin flex($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin marja-left() {
+    margin-left: 25%;
+    width: 75%;
+}
+
+@mixin no-marja() {
+    margin-left: 0;
+    width: 100%;
+}
+
+$title-color: #ffffff;
+$menu-color: #312450;
+$description-color: rgba(255, 255, 255, 0.55);
+$fone-color: rgba(255, 255, 255, 0.06);
+$pink-color: #b74e91;
+$pink-fone-color: #c570a6;
+
+$breakpoints: (
+    tablet: 1023px,
+    tablet2: 771px,
+    mobile: 450px
+);
+
+@mixin media($platform) {
+    @media screen and (max-width: map-get($breakpoints, $platform)) {
+        @content;
+    }
+}
+
+@mixin shrift {
+    margin-right: 10px;
+    font-size: 10px;
+} 
