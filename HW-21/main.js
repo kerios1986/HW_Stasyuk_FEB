@@ -4,11 +4,11 @@ switch (who) {
 
     default:
         alert('Я вас не знаю');
-        break;
+    break;
 
     case ('Отмена'):
         alert('Вход отменен');
-        break;
+    break;
 
     case ('Админ'):
         who = prompt('Парль?');
@@ -16,15 +16,15 @@ switch (who) {
         switch (who) {
 
             default:
-            alert('Пароль неверен');
+                alert('Пароль неверен');
             break;
 
             case ('Отмена'):
-            alert('Вход отменен');
+                alert('Вход отменен');
             break;
 
             case ('Черный Властелин'):
-            alert('Добро пожаловать!');
+                alert('Добро пожаловать!');
             break;
         }
         
