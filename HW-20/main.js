@@ -9,16 +9,16 @@ document.write(', <b>b</b> = ', b);
 document.write(' <br> <br> Результат: <br>')
 document.write('<br>--------------------<br> <br>')
 
-res = a + b;
+res = +a + +b;
 document.write(' a + b = ', res)
 
-res = a - b;
+res = +a - +b;
 document.write('; a - b = ', res)
 
-res = a * b;
+res = +a * +b;
 document.write('; a * b = ', res)
 
-res = a / b;
+res = +a / +b;
 document.write('; a / b = ', res)
 
 document.write('<br> <br> -------------------- <br> <br>')
