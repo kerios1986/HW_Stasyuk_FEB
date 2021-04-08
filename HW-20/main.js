@@ -1,9 +1,9 @@
 document.write(' **************<br>');
 
-a = 10;
+a = prompt('Введите значение a');
 document.write('<br> При <b>а</b> = ', a);
 
-b = 4;
+b = prompt('Введите значение b');
 document.write(', <b>b</b> = ', b);
 
 document.write(' <br> <br> Результат: <br>')
