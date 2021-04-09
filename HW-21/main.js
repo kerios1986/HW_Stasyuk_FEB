@@ -15,16 +15,16 @@ switch (who) {
 
         switch (who) {
 
-            default:
-                alert('Пароль неверен');
-            break;
-
             case ('Отмена'):
                 alert('Вход отменен');
             break;
 
             case ('Черный Властелин'):
                 alert('Добро пожаловать!');
+            break;
+
+            default:
+                alert('Пароль неверен');
             break;
         }
         
