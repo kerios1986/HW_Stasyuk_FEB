@@ -2,10 +2,6 @@ who = prompt('Кто пришел?');
 
 switch (who) {
 
-    default:
-        alert('Я вас не знаю');
-    break;
-
     case ('Отмена'):
         alert('Вход отменен');
     break;
@@ -28,5 +24,9 @@ switch (who) {
             break;
         }
         
+    break;
+
+    default:
+        alert('Я вас не знаю');
     break;
 }
